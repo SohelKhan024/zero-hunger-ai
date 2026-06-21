@@ -1,9 +1,15 @@
 {
   "$schema": "https://openapi.vercel.com/vercel.json",
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static"
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/client/dist/index.html"
     }
   ]
 }

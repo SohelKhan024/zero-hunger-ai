@@ -1,16 +1,9 @@
 {
   "$schema": "https://openapi.vercel.com/vercel.json",
-  "builds": [
-    {
-      "src": "client/package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "outputDirectory": "client/dist",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/client/dist/index.html"
+      "destination": "/index.html"
     }
   ]
 }

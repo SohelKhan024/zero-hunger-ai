@@ -1,5 +1,11 @@
 {
   "$schema": "https://openapi.vercel.com/vercel.json",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static"
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

@@ -61,3 +61,5 @@ package-lock.json
 # package-lock.json files
 client/package-lock.json
 server/package-lock.json
+.vercel
+.env*
